@@ -16,43 +16,33 @@ class SquareView: UIView {
     @objc private func buttonPrest(){
         onButtonSelection?()
     }
-    
     init() {
         super.init(frame: .zero)
         commonInit()
     }
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
-
-
 extension SquareView {
     func set(value: String) {
-        if !isValeuSet {
-            squareLabel.text = value
-            isValeuSet = true
-        }
+        squareLabel.text = value
+        isValeuSet = true
     }
-    
     func commonInit() {
         initSquareLabel()
         initSquareButton()
         constructHierarchy()
         activateConstraints()
     }
-    
     private func initSquareLabel() {
         squareLabel = UILabel()
         squareLabel.textColor = .white
         squareLabel.textAlignment = .center
-        squareLabel.font = .systemFont(ofSize: 75)
         squareLabel.translatesAutoresizingMaskIntoConstraints = false
     }
     private func initSquareButton() {
         squareButton = UIButton()
-//        squareButton.layer.cornerRadius = 12
         squareButton.addTarget(self, action: #selector(buttonPrest), for: .touchUpInside)
         squareButton.translatesAutoresizingMaskIntoConstraints = false
     }
@@ -60,9 +50,6 @@ extension SquareView {
         addSubview(squareLabel)
         addSubview(squareButton)
     }
-    
-    
-    
     private func activateConstraints() {
         NSLayoutConstraint.activate([
             squareButton.topAnchor.constraint(equalTo: topAnchor),
@@ -76,5 +63,4 @@ extension SquareView {
             squareLabel.bottomAnchor.constraint(equalTo:   bottomAnchor)
         ])
     }
-
 }
