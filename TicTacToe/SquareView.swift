@@ -31,7 +31,6 @@ class SquareView: UIView {
 extension SquareView {
     func set(value: String) {
         if !isValeuSet {
-            print("hfg")
             squareLabel.text = value
             isValeuSet = true
         }
@@ -53,7 +52,7 @@ extension SquareView {
     }
     private func initSquareButton() {
         squareButton = UIButton()
-        squareButton.layer.cornerRadius = 12
+//        squareButton.layer.cornerRadius = 12
         squareButton.addTarget(self, action: #selector(buttonPrest), for: .touchUpInside)
         squareButton.translatesAutoresizingMaskIntoConstraints = false
     }
