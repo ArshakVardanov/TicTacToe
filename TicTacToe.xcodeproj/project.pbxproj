@@ -16,6 +16,7 @@
 		FD79D0CE2818489F00EE0638 /* TicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD79D0CD2818489F00EE0638 /* TicTacToeTests.swift */; };
 		FD79D0D82818489F00EE0638 /* TicTacToeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD79D0D72818489F00EE0638 /* TicTacToeUITests.swift */; };
 		FD79D0DA2818489F00EE0638 /* TicTacToeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD79D0D92818489F00EE0638 /* TicTacToeUITestsLaunchTests.swift */; };
+		FD79D0E72818569800EE0638 /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD79D0E62818569800EE0638 /* SquareView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		FD79D0D32818489F00EE0638 /* TicTacToeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD79D0D72818489F00EE0638 /* TicTacToeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeUITests.swift; sourceTree = "<group>"; };
 		FD79D0D92818489F00EE0638 /* TicTacToeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FD79D0E62818569800EE0638 /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				FD79D0B62818489E00EE0638 /* AppDelegate.swift */,
 				FD79D0B82818489E00EE0638 /* SceneDelegate.swift */,
 				FD79D0BA2818489E00EE0638 /* ViewController.swift */,
+				FD79D0E62818569800EE0638 /* SquareView.swift */,
 				FD79D0BC2818489E00EE0638 /* Main.storyboard */,
 				FD79D0BF2818489E00EE0638 /* Assets.xcassets */,
 				FD79D0C12818489E00EE0638 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 				FD79D0BB2818489E00EE0638 /* ViewController.swift in Sources */,
 				FD79D0B72818489E00EE0638 /* AppDelegate.swift in Sources */,
 				FD79D0B92818489E00EE0638 /* SceneDelegate.swift in Sources */,
+				FD79D0E72818569800EE0638 /* SquareView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
