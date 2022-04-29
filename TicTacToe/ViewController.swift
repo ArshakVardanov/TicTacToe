@@ -68,8 +68,10 @@ extension ViewController {
         restartButtonView.translatesAutoresizingMaskIntoConstraints = false
         restartButtonView.backgroundColor = .blue
         restartButtonView.layer.cornerRadius = 10
-        restartButtonView.squareButton.addTarget(self, action: #selector(restartButtonPrest), for: .touchUpInside)
-        
+        restartButtonView.squareButton.addTarget(
+            self,
+            action: #selector(restartButtonPrest),
+            for: .touchUpInside)
     }
     private func initVertSteck(){
         vertSteck = UIStackView()
